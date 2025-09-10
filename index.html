@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mama Willow - Checkout</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Header Section -->
+        <header class="header">
+            <div class="header-content">
+                <div class="logo-section">
+                    <div class="logo">
+                        <img src="assets/williamlogo.svg" alt="William Logo" class="logo-svg">
+                    </div>
+                </div>
+                
+                <div class="trust-section">
+                    <div class="trust-badges">
+                        <div class="badge-with-rating">
+                            <div class="badge">
+                                <img src="assets/locationicon.svg" alt="Location" class="location-icon">
+                                <span>Spedizione sicura con tracciamento</span>
+                            </div>
+                            <div class="rating-section">
+                                <div class="stars">★★★★★</div>
+                                <span class="rating-text">4.8 su 700 clienti soddisfatti</span>
+                            </div>
+                        </div>
+                        <div class="badge">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Reso gratuito per la tua tranquillità!</span>
+                        </div>
+                        <div class="badge">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Ti rimborsiamo senza domande!</span>
+                        </div>
+                        <div class="badge">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Soddisfatti o Rimborsati!</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="main-content">
+            <!-- Left Column - Checkout Form -->
+            <div class="checkout-section">
+                <div class="warning-banner">
+                    <span> <span>🚨</span>  Scorte quasi esaurite! <span>Carrello bloccato per</span>  <span id="countdown">10:00</span> min</span>
+                </div>
+                
+                <h2>Checkout veloce</h2>
+                
+                <!-- Payment Options -->
+                <div class="payment-options">
+                    <button class="payment-btn apple-pay">
+                        <img src="assets/applepay.svg" alt="Apple Pay" class="payment-icon">
+                    </button>
+                    <button class="payment-btn google-pay">
+                        <img src="assets/googlepay.svg" alt="Google Pay" class="payment-icon">
+                    </button>
+                    <button class="payment-btn amazon-pay">
+                        <img src="assets/amazonpay.svg" alt="Amazon Pay" class="payment-icon">
+                    </button>
+                </div>
+                
+                <button class="payment-btn paypal">
+                    <img src="assets/paypal.svg" alt="PayPal" class="payment-icon">
+                </button>
+                
+                <p class="save-text">Risparmia subito il 5% - paga online!</p>
+                <p class="scroll-text">Per altre opzioni di pagamento, scorri e controlla qui sotto!</p>
+                <p class="ora-text">ora</p>
+
+                <!-- Step 1: Customer Information -->
+                <div class="form-section">
+                    <h3>PASSO 1: INFORMAZIONI SUL CLIENTE</h3>
+                    
+                    <div class="form-group">
+                        <label for="phone">Numero di telefono*</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    
+                    <div class="form-group error">
+                        <label for="email">E-mail*</label>
+                        <input type="email" id="email" name="email" required>
+                        <span class="error-message">Si prega di inserire un'e-mail validi.</span>
+                    </div>
+                    
+                    <div class="checkbox-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" checked>
+                            <span class="checkmark"></span>
+                            Ricevi notizie e offerte via e-mail
+                        </label>
+                        
+                        <label class="checkbox-label">
+                            <input type="checkbox" checked>
+                            <span class="checkmark"></span>
+                            <i class="fab fa-whatsapp"></i>
+                            Iscriviti agli aggiornamenti di Whatsapp
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Step 2: Shipping Information -->
+                <div class="form-section">
+                    <h3>PASSO 2: INFORMAZIONI SULLA SPEDIZIONE</h3>
+                    
+                    <div class="form-group">
+                        <label for="firstName">Nome*</label>
+                        <input type="text" id="firstName" name="firstName" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="lastName">Cognome*</label>
+                        <input type="text" id="lastName" name="lastName" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="address">Indirizzo*</label>
+                        <input type="text" id="address" name="address" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="country">Paese/regione*</label>
+                        <select id="country" name="country" required>
+                            <option value="">Seleziona paese</option>
+                            <option value="IT">Italia</option>
+                            <option value="CA" selected>Canada</option>
+                            <option value="US">Stati Uniti</option>
+                            <option value="FR">Francia</option>
+                            <option value="DE">Germania</option>
+                            <option value="ES">Spagna</option>
+                            <option value="GB">Regno Unito</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="state">Abruzzo*</label>
+                        <input type="text" id="state" name="state" required>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="city">Città*</label>
+                            <input type="text" id="city" name="city" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="postalCode">Codice postale*</label>
+                            <input type="text" id="postalCode" name="postalCode" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="apartment">Interno, scala, ecc. (facoltativo)</label>
+                        <input type="text" id="apartment" name="apartment">
+                    </div>
+                </div>
+
+                <!-- Step 3: Payment Method -->
+                <div class="form-section">
+                    <h3>PASSO 3: METODO DI PAGAMENTO</h3>
+                    
+                    <!-- Credit/Debit Card Option -->
+                    <div class="payment-method">
+                        <label class="radio-label">
+                            <input type="radio" name="paymentMethod" value="card" checked>
+                            <span class="radio-custom"></span>
+                            <span class="payment-text">Carta di credito o di debito</span>
+                            <div class="card-logos">
+                                <img src="assets/Paymenticonvisa.svg" alt="Visa" class="card-logo">
+                                <img src="assets/Paymenticonmastercard.svg" alt="Mastercard" class="card-logo">
+                                <img src="assets/Paymenticonamex.svg" alt="American Express" class="card-logo">
+                            </div>
+                        </label>
+                        
+                        <div class="card-details">
+                            <div class="form-group">
+                                <label for="cardNumber">Numero della carta</label>
+                                <div class="input-with-icon">
+                                    <input type="text" id="cardNumber" name="cardNumber" placeholder="1234 5678 9012 3456">
+                                    <img src="assets/lockicon.svg" alt="Lock" class="custom-icon">
+                                </div>
+                            </div>
+                            
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="expiryDate">Data di scadenza (MM/AA)</label>
+                                    <input type="text" id="expiryDate" name="expiryDate" placeholder="MM/AA">
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="securityCode">Codice di sicurezza</label>
+                                    <div class="input-with-icon">
+                                        <input type="text" id="securityCode" name="securityCode" placeholder="123">
+                                        <img src="assets/questionicon.svg" alt="Question" class="custom-icon">
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="checkbox-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" checked>
+                                    <span class="checkmark"></span>
+                                    Usa l'indirizzo di spedizione come indirizzo di fatturazione
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Cash on Delivery Option -->
+                    <div class="payment-method">
+                        <label class="radio-label">
+                            <input type="radio" name="paymentMethod" value="cod">
+                            <span class="radio-custom"></span>
+                            <span class="payment-text">Pagamento alla consegna</span>
+                            <div class="cod-logo">
+                                <img src="assets/codicon.svg" alt="COD" class="payment-icon-custom">
+                            </div>
+                        </label>
+                    </div>
+                    
+                    <!-- PayPal Option -->
+                    <div class="payment-method">
+                        <label class="radio-label">
+                            <input type="radio" name="paymentMethod" value="paypal">
+                            <span class="radio-custom"></span>
+                            <span class="payment-text">PayPal</span>
+                            <div class="paypal-logo">
+                                <img src="assets/paypal.svg" alt="PayPal" class="payment-icon-custom">
+                            </div>
+                        </label>
+                    </div>
+                    
+                    <!-- Order Protection Upsell -->
+                    <div class="upsell-box">
+                        <div class="upsell-header">
+                            <img src="assets/arrowicon.svg" alt="Arrow" class="arrow-icon">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="orderProtection">
+                                <span class="checkmark"></span>
+                                <span class="upsell-text">Sì, proteggi il mio ordine per <span class="price-highlight">€3,99</span></span>
+                            </label>
+                        </div>
+                        <div class="upsell-content">
+                            <div class="upsell-icons">
+                                <img src="assets/delieveyicon.svg" alt="Delivery" class="upsell-icon">
+                            </div>
+                            <div class="upsell-description">
+                                Proteggi il tuo ordine! Se il tuo pacco viene perso, danneggiato o rubato, ti invieremo un sostituto o ti rimborseremo - senza fare domande.
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Surprise Gift Upsell -->
+                    <div class="upsell-box">
+                        <div class="upsell-header">
+                            <img src="assets/arrowicon.svg" alt="Arrow" class="arrow-icon">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="surpriseGift">
+                                <span class="checkmark"></span>
+                                <span class="upsell-text">Sì, aggiungi un regalo a sorpresa del valore di <span class="crossed-price">29,90€</span> per <span class="discount-price">9,99€</span></span>
+                            </label>
+                        </div>
+                        <div class="upsell-content">
+                            <div class="upsell-icons">
+                                <img src="assets/gifticon.svg" alt="Gift" class="upsell-icon">
+                            </div>
+                            <div class="upsell-description">
+                                Qualcosa che puoi goderti tu stesso o regalare a qualcuno che ami. È un modo semplice per condividere la gioia e ispirare uno stile di vita senza plastica, aiutando sia loro che il pianeta.
+                                <div class="purchase-banner">
+                                    L'85% HA ACQUISTATO QUESTO
+                                </div>
+                            </div>
+                          
+                        </div>
+                    </div>
+                    
+                    <!-- Complete Purchase Button -->
+                    <button class="complete-purchase-btn">
+                        COMPLETA L'ACQUISTO
+                    </button>
+                    
+                    <!-- Terms and Conditions -->
+                    <div class="terms-section">
+                        <p class="terms-text">
+                            Se uno o più articoli nel tuo carrello sono un acquisto differito o ricorrente. Continuando con il pagamento, accetti che il tuo metodo di pagamento venga addebitato automaticamente al prezzo e con la frequenza indicati in questa pagina fino alla sua conclusione o alla tua cancellazione.
+                        </p>
+                        <div class="terms-links">
+                            <a href="#" class="terms-link">Impressum</a>
+                            <a href="#" class="terms-link">Protezione dei dati</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Column - Order Summary -->
+            <div class="order-summary">
+                <h2>Riepilogo dell'Ordine</h2>
+                
+                <div class="cart-items">
+                    <!-- Item 1 -->
+                    <div class="cart-item">
+                        <div class="item-image">
+                            <img src="assets/Product1wiilow.svg" alt="Product 1" class="product-image">
+                        </div>
+                        <div class="item-details">
+                            <div class="item-name">3x Bucato Puluto</div>
+                            <div class="item-subscription">abbonamento ogni 1 mese</div>
+                            <div class="item-quantity">
+                                <button class="qty-btn minus">-</button>
+                                <span class="quantity">1</span>
+                                <button class="qty-btn plus">+</button>
+                            </div>
+                        </div>
+                        <div class="item-price">
+                            <div class="original-price">89.90€</div>
+                            <div class="current-price">39.00€ al mese</div>
+                        </div>
+                    </div>
+
+                    <!-- Item 2 -->
+                    <div class="cart-item gift">
+                        <div class="item-image">
+                            <img src="assets/product2willow.svg" alt="Product 2" class="product-image">
+                        </div>
+                        <div class="item-details">
+                            <div class="item-name">1x Bucato Puluto</div>
+                            <div class="item-gift">regalo</div>
+                        </div>
+                        <div class="item-price">
+                            <div class="original-price">29.90€</div>
+                            <div class="current-price">0.00€ GRATIS</div>
+                        </div>
+                    </div>
+
+                    <!-- Item 3 -->
+                    <div class="cart-item gift">
+                        <div class="item-image">
+                            <img src="assets/product3.svg" alt="Product 3" class="product-image">
+                        </div>
+                        <div class="item-details">
+                            <div class="item-name">eBook</div>
+                            <div class="item-gift">regalo</div>
+                        </div>
+                        <div class="item-price">
+                            <div class="original-price">10.90€</div>
+                            <div class="current-price">0.00€ GRATIS</div>
+                        </div>
+                    </div>
+
+                    <!-- Item 4 -->
+                    <div class="cart-item gift">
+                        <div class="item-image">
+                            <img src="assets/product4.svg" alt="Product 4" class="product-image">
+                        </div>
+                        <div class="item-details">
+                            <div class="item-name">Spedizione gratuita</div>
+                            <div class="item-gift">regalo</div>
+                        </div>
+                        <div class="item-price">
+                            <div class="original-price">6.90€</div>
+                            <div class="current-price">0.00€ GRATIS</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Discount Code -->
+                <div class="discount-section">
+                    <label for="discountCode">Codice sconto</label>
+                    <div class="discount-input">
+                        <input type="text" id="discountCode" placeholder="Inserisci codice">
+                        <button class="apply-btn">Applica</button>
+                    </div>
+                </div>
+
+                <!-- Order Totals -->
+                <div class="order-totals">
+                    <div class="total-row compare">
+                        <span>Confronta</span>
+                        <span class="crossed-price">107.60€</span>
+                    </div>
+                    <div class="total-row">
+                        <span>Subtotale</span>
+                        <span>39.00€</span>
+                    </div>
+                    <div class="total-row">
+                        <span>Spedizione</span>
+                        <span class="free">Gratuito</span>
+                    </div>
+                    <div class="total-row final-total">
+                        <span>Totale</span>
+                        <span>39.00€</span>
+                    </div>
+                </div>
+
+                <div class="recurring-total">
+                    Totale ricorrente: <strong>39.00€ ogni mese</strong>
+                </div>
+                
+                <!-- Why Choose MamaWillow Section -->
+                <div class="why-choose-section">
+                    <h2>Perché scegliere MamaWillow?</h2>
+                    
+                    <!-- Benefit 1 -->
+                    <div class="benefit-item">
+                        <div class="benefit-icon">
+                            <img src="assets/image1.svg" alt="Benefit 1" class="benefit-image">
+                        </div>
+                        <div class="benefit-text">
+                            <strong>Zero parabeni, fosfati, candeggina o rifiuti di plastica:</strong> formula 100% vegetale
+                        </div>
+                    </div>
+                    
+                    <!-- Benefit 2 -->
+                    <div class="benefit-item">
+                        <div class="benefit-icon">
+                            <img src="assets/image2.svg" alt="Benefit 2" class="benefit-image">
+                        </div>
+                        <div class="benefit-text">
+                            <strong>Garanzia di rimborso di 30 giorni:</strong> Non sei soddisfatto del tuo acquisto dopo l'uso? Restituiscilo facilmente entro 30 giorni e riavrai i tuoi soldi
+                        </div>
+                    </div>
+                    
+                    <!-- Benefit 3 -->
+                    <div class="benefit-item">
+                        <div class="benefit-icon">
+                            <img src="assets/image3.svg" alt="Benefit 3" class="benefit-image">
+                        </div>
+                        <div class="benefit-text">
+                            <strong>Spedizione CO2 Compensata in tutto il mondo:</strong> Spediamo in tutto il mondo e compensiamo la CO2 per tutti gli ordini
+                        </div>
+                    </div>
+                    
+                    <!-- Trustpilot Rating -->
+                    <div class="trustpilot-section">
+                        <div class="trustpilot-logo">
+                            <span class="trustpilot-text">Trustpilot</span>
+                            
+                        </div>
+                        <div class="trustpilot-stars">
+                           
+                            <img src="assets/staricon.svg" alt="Star" class="star-icon">
+                        </div>
+                        <div class="trustpilot-text-small">Basato su oltre 700 recensioni</div>
+                    </div>
+                    
+                    <!-- Customer Review -->
+                    <div class="customer-review">
+                        <div class="review-header">
+                            <div class="reviewer-info">
+                                <div class="reviewer-avatar">
+                                    <img src="assets/Reviewimg1.svg" alt="Reviewer 1" class="review-avatar-image">
+                                </div>
+                                <div class="reviewer-details">
+                                    <div class="reviewer-name">Rachele M</div>
+                                    <div class="reviewer-meta">2 Recensioni</div>
+                                </div>
+                                <div class="reviewer-location">IT</div>
+                            </div>
+                            <div class="review-date">17 ago 2025</div>
+                        </div>
+                        
+                        <div class="review-rating">
+                           
+                            <img src="assets/staricon.svg" alt="Star" class="star-icon">
+                        </div>
+                        
+                        <div class="review-text">
+                            <p>Ho provato molti prodotti per il bucato ma questo è davvero eccezionale! La qualità è fantastica e mi piace sapere che sto facendo qualcosa di buono per l'ambiente. I miei vestiti sono sempre puliti e profumati.</p>
+                            <p>La spedizione è stata veloce e il packaging è completamente riciclabile. Consiglio vivamente questo prodotto a chiunque voglia fare la differenza per il nostro pianeta!</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Additional Customer Review 1 -->
+                    <div class="customer-review">
+                        <div class="review-header">
+                            <div class="reviewer-info">
+                                <div class="reviewer-avatar">
+                                    <img src="assets/reviewimg2.svg" alt="Reviewer 2" class="review-avatar-image">
+                                </div>
+                                <div class="reviewer-details">
+                                    <div class="reviewer-name">Marco F.</div>
+                                    <div class="reviewer-meta">3 Recensioni</div>
+                                </div>
+                                <div class="reviewer-location">IT</div>
+                            </div>
+                            <div class="review-date">06 lug 2025</div>
+                        </div>
+                        
+                        <div class="review-rating">
+                          
+                            <img src="assets/staricon.svg" alt="Star" class="star-icon">
+                        </div>
+                        
+                        <div class="review-text">
+                            <p>Finalmente ho eliminato le grandi confezioni di detersivo! Bucato Pulito MamaWillow è semplicissimo da usare: prendi un foglio e via. Zero sprechi, pratico per i viaggi (niente bottiglie che perdono) e profumo delicato che non dà mal di testa.</p>
+                            <p>Non tornerei mai ai vecchi detersivi. A volte mi dimentico di dire agli amici che è detersivo, non carta! 😄</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Additional Customer Review 2 -->
+                    <div class="customer-review">
+                        <div class="review-header">
+                            <div class="reviewer-info">
+                                <div class="reviewer-avatar">
+                                    <img src="assets/reviewimg3.svg" alt="Reviewer 3" class="review-avatar-image">
+                                </div>
+                                <div class="reviewer-details">
+                                    <div class="reviewer-name">Rosalia P.</div>
+                                    <div class="reviewer-meta">1 Recensioni</div>
+                                </div>
+                                <div class="reviewer-location">IT</div>
+                            </div>
+                            <div class="review-date">29 ago 2025</div>
+                        </div>
+                        
+                        <div class="review-rating">
+                           
+                            <img src="assets/staricon.svg" alt="Star" class="star-icon">
+                        </div>
+                        
+                        <div class="review-text">
+                            <p>Ero scettica sui prodotti "green" ma Bucato Pulito MamaWillow mi ha sorpreso! Lava benissimo anche a basse temperature e non lascia residui sulla pelle, importante per la mia pelle delicata.</p>
+                            <p>I fogli sono pratici, non gocciolano, leggeri, si sciolgono subito e occupano poco spazio (la scatola sembra un libro e dura tantissimi lavaggi). Anche mia mamma tradizionalista è rimasta sorpresa dall'efficacia. Ora è il mio detersivo fisso!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
