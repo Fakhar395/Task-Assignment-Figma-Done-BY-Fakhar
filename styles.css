@@ -4,13 +4,6 @@
     box-sizing: border-box;
 }
 
-html, body {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    overflow-x: hidden;
-}
-
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #f8f9fa;
@@ -21,19 +14,16 @@ body {
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0;
-    width: 100%;
+    padding: 20px;
 }
 
 /* Header Styles */
 .header {
     background: white;
-    border-radius: 0;
+    border-radius: 12px;
     padding: 25px 30px;
     margin-bottom: 20px;
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-    overflow: hidden;
-    width: 100%;
 }
 
 .header-content {
@@ -43,8 +33,6 @@ body {
     margin-bottom: 20px;
     width: 100%;
     gap: 40px;
-    min-width: 0;
-    overflow: hidden;
 }
 
 .logo-section {
@@ -79,7 +67,6 @@ body {
     flex-wrap: wrap;
     justify-content: flex-start;
     align-items: flex-start;
-    width: 100%;
 }
 
 /* Target the last 3 badges specifically */
@@ -101,9 +88,6 @@ body {
     align-items: center;
     gap: 8px;
     border: 1px solid #B3D4B6;
-    word-wrap: break-word;
-    hyphens: auto;
-    text-align: center;
 }
 
 .badge i {
@@ -160,7 +144,7 @@ body {
 
 .warning-banner {
     background: #ffe6e6;
-    border-radius: 0;
+    border-radius: 12px;
     padding: 12px 16px;
     display: flex;
     align-items: center;
@@ -198,10 +182,9 @@ body {
 /* Checkout Section */
 .checkout-section {
     background: white;
-    border-radius: 0;
+    border-radius: 12px;
     padding: 30px;
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-    width: 100%;
 }
 
 .checkout-section h2 {
@@ -473,11 +456,10 @@ body {
 /* Order Summary */
 .order-summary {
     background: white;
-    border-radius: 0;
+    border-radius: 12px;
     padding: 30px;
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
     height: fit-content;
-    width: 100%;
 }
 
 .order-summary h2 {
@@ -968,11 +950,10 @@ body {
 /* Why Choose MamaWillow Section */
 .why-choose-section {
     background: #f5f5f5;
-    border-radius: 0;
+    border-radius: 12px;
     padding: 30px;
     margin-top: 20px;
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-    width: 100%;
 }
 
 .why-choose-section h2 {
@@ -1293,41 +1274,31 @@ body {
     
     .header {
         padding: 15px 20px;
-        margin-bottom: 15px;
     }
     
     .header-content {
         flex-direction: column;
         align-items: center;
-        gap: 15px;
-        width: 100%;
-    }
-    
-    .logo-section {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        margin-bottom: 10px;
+        gap: 20px;
     }
     
     .logo-svg {
-        width: 120px;
-        height: 40px;
+        width: 100px;
+        height: 35px;
         margin-top: 0;
     }
     
     .trust-section {
         align-items: center;
+        margin-left: 0;
         width: 100%;
-        max-width: 100%;
     }
     
     .trust-badges {
         justify-content: center;
         flex-wrap: wrap;
-        gap: 8px;
+        gap: 10px;
         width: 100%;
-        max-width: 100%;
     }
     
     .badge-with-rating {
@@ -1335,15 +1306,7 @@ body {
         align-items: center;
         text-align: center;
         width: 100%;
-        margin-bottom: 10px;
-        order: -1;
-    }
-    
-    .badge-with-rating .badge {
-        width: 100%;
-        justify-content: center;
-        padding: 8px 12px;
-        font-size: 12px;
+        margin-bottom: 15px;
     }
     
     .rating-section {
@@ -1351,14 +1314,6 @@ body {
         margin-top: 8px;
         flex-direction: row;
         gap: 8px;
-        width: 100%;
-    }
-    
-    .badge {
-        font-size: 11px;
-        padding: 6px 10px;
-        flex-shrink: 0;
-        min-width: fit-content;
     }
     
     .payment-options {
@@ -1382,7 +1337,7 @@ body {
 
 @media (max-width: 480px) {
     .container {
-        padding: 0;
+        padding: 10px;
     }
     
     .header {
@@ -1391,18 +1346,12 @@ body {
     }
     
     .header-content {
-        gap: 12px;
-        width: 100%;
-    }
-    
-    .logo-section {
-        width: 100%;
-        margin-bottom: 8px;
+        gap: 15px;
     }
     
     .logo-svg {
-        width: 100px;
-        height: 35px;
+        width: 80px;
+        height: 28px;
         margin-top: 0;
     }
     
@@ -1415,53 +1364,37 @@ body {
         margin: 0 auto;
     }
     
-    .trust-section {
-        width: 100%;
-    }
-    
     .trust-badges {
         flex-direction: column;
-        gap: 6px;
+        gap: 8px;
         width: 100%;
-        align-items: center;
     }
     
     .badge {
-        font-size: 10px;
-        padding: 5px 8px;
+        font-size: 11px;
+        padding: 6px 10px;
         justify-content: center;
         text-align: center;
-        width: 100%;
-        max-width: 280px;
     }
     
     .badge-with-rating {
         width: 100%;
-        margin-bottom: 8px;
-        order: -1;
-    }
-    
-    .badge-with-rating .badge {
-        width: 100%;
-        max-width: 100%;
-        font-size: 11px;
-        padding: 6px 10px;
+        margin-bottom: 10px;
     }
     
     .rating-section {
         flex-direction: row;
-        gap: 6px;
+        gap: 8px;
         text-align: center;
         justify-content: center;
-        width: 100%;
     }
     
     .stars {
-        font-size: 14px;
+        font-size: 16px;
     }
     
     .rating-text {
-        font-size: 12px;
+        font-size: 13px;
     }
     
     .terms-links {
@@ -1485,305 +1418,5 @@ body {
         flex-direction: column;
         align-items: flex-start;
         gap: 8px;
-    }
-}
-
-/* Extra small screens (320px and below) */
-@media (max-width: 320px) {
-    .container {
-        padding: 0;
-    }
-    
-    .header {
-        padding: 10px 12px;
-        margin-bottom: 12px;
-    }
-    
-    .header-content {
-        gap: 10px;
-    }
-    
-    .logo-svg {
-        width: 90px;
-        height: 32px;
-    }
-    
-    .badge {
-        font-size: 9px;
-        padding: 4px 6px;
-        max-width: 100%;
-    }
-    
-    .badge-with-rating .badge {
-        font-size: 10px;
-        padding: 5px 8px;
-    }
-    
-    .stars {
-        font-size: 12px;
-    }
-    
-    .rating-text {
-        font-size: 11px;
-    }
-    
-    .checkout-section, .order-summary {
-        padding: 15px;
-    }
-}
-
-/* Ultra small screens (280px and below) */
-@media (max-width: 280px) {
-    .container {
-        padding: 0;
-    }
-    
-    .header {
-        padding: 8px 10px;
-        margin-bottom: 10px;
-        border-radius: 8px;
-    }
-    
-    .header-content {
-        gap: 8px;
-    }
-    
-    .logo-section {
-        margin-bottom: 6px;
-    }
-    
-    .logo-svg {
-        width: 80px;
-        height: 28px;
-    }
-    
-    .trust-section {
-        width: 100%;
-    }
-    
-    .trust-badges {
-        gap: 4px;
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    .badge {
-        font-size: 8px;
-        padding: 3px 5px;
-        max-width: 100%;
-        width: 100%;
-        text-align: center;
-        line-height: 1.2;
-    }
-    
-    .badge-with-rating {
-        width: 100%;
-        margin-bottom: 6px;
-    }
-    
-    .badge-with-rating .badge {
-        font-size: 9px;
-        padding: 4px 6px;
-        width: 100%;
-    }
-    
-    .rating-section {
-        gap: 4px;
-        margin-top: 4px;
-    }
-    
-    .stars {
-        font-size: 10px;
-    }
-    
-    .rating-text {
-        font-size: 9px;
-    }
-    
-    .location-icon {
-        width: 20px;
-        height: 20px;
-    }
-    
-    .checkout-section, .order-summary {
-        padding: 12px;
-    }
-}
-
-/* Ultra micro screens (260px and below) */
-@media (max-width: 260px) {
-    .container {
-        padding: 0;
-        margin: 0;
-        max-width: 100%;
-        width: 100%;
-    }
-    
-    body {
-        margin: 0;
-        padding: 0;
-    }
-    
-    .header {
-        padding: 3px 4px;
-        margin: 0 0 6px 0;
-        width: 100%;
-        box-sizing: border-box;
-    }
-    
-    .header-content {
-        gap: 3px;
-        width: 100%;
-        margin: 0;
-        padding: 0;
-    }
-    
-    .logo-svg {
-        width: 55px;
-        height: 20px;
-    }
-    
-    .badge {
-        font-size: 5px;
-        padding: 1px 2px;
-        line-height: 1.0;
-        width: 100%;
-    }
-    
-    .badge-with-rating .badge {
-        font-size: 6px;
-        padding: 1px 3px;
-    }
-    
-    .stars {
-        font-size: 7px;
-    }
-    
-    .rating-text {
-        font-size: 6px;
-    }
-    
-    .location-icon {
-        width: 14px;
-        height: 14px;
-    }
-    
-    .checkout-section, .order-summary {
-        padding: 6px;
-        margin: 0;
-        width: 100%;
-    }
-    
-    .warning-banner {
-        padding: 4px 6px;
-        font-size: 10px;
-        margin: 0 0 6px 0;
-    }
-    
-    .checkout-section h2 {
-        font-size: 11px;
-    }
-}
-
-/* Micro screens (250px and below) */
-@media (max-width: 250px) {
-    .container {
-        padding: 0;
-        margin: 0;
-        max-width: 100%;
-    }
-    
-    .header {
-        padding: 4px 6px;
-        margin: 0 0 8px 0;
-        border-radius: 0;
-        width: 100%;
-        box-sizing: border-box;
-    }
-    
-    .header-content {
-        gap: 4px;
-        width: 100%;
-        margin: 0;
-        padding: 0;
-    }
-    
-    .logo-section {
-        width: 100%;
-        margin: 0;
-        padding: 0;
-    }
-    
-    .logo-svg {
-        width: 60px;
-        height: 22px;
-    }
-    
-    .trust-section {
-        width: 100%;
-        margin: 0;
-        padding: 0;
-    }
-    
-    .trust-badges {
-        width: 100%;
-        margin: 0;
-        padding: 0;
-        gap: 2px;
-    }
-    
-    .badge {
-        font-size: 6px;
-        padding: 2px 3px;
-        line-height: 1.1;
-        width: 100%;
-        margin: 0;
-    }
-    
-    .badge-with-rating {
-        width: 100%;
-        margin: 0 0 4px 0;
-    }
-    
-    .badge-with-rating .badge {
-        font-size: 7px;
-        padding: 2px 4px;
-        width: 100%;
-    }
-    
-    .rating-section {
-        gap: 2px;
-        margin: 2px 0 0 0;
-        width: 100%;
-    }
-    
-    .stars {
-        font-size: 8px;
-    }
-    
-    .rating-text {
-        font-size: 7px;
-    }
-    
-    .location-icon {
-        width: 16px;
-        height: 16px;
-    }
-    
-    .checkout-section, .order-summary {
-        padding: 8px;
-        margin: 0;
-        width: 100%;
-    }
-    
-    .warning-banner {
-        padding: 6px 8px;
-        font-size: 11px;
-        margin: 0 0 8px 0;
-        width: 100%;
-    }
-    
-    .checkout-section h2 {
-        font-size: 12px;
     }
 }
